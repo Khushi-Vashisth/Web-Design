@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>NCC</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .li1 {
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        border-right: 1px solid black;
+        padding: 10px;
+      }
+      .body {
+        background-color: #fff;
+      }
+      .ul1 {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        /* padding: 0 20px; */
+      }
+      .navy-border {
+        position: sticky;
+        top: 0px;
+        background-color: #2e3092;
+      }
+      .navy {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1300px;
+      }
+      .logo {
+        align-items: center;
+        display: flex;
+        padding: 20px 0;
+      }
+      .mygov {
+        border-right: 1px solid #fff;
+        padding: 0 10px;
+      }
+      .ncc-logo {
+        padding: 0 10px;
+      }
+      img {
+        height: auto;
+        width: 100%;
+      }
+      .head {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .ul2 {
+        font-size: 20px;
+        margin-left: 80px;
+        display: flex;
+        align-items: center;
+        list-style: none;
+      }
+      .li {
+        border-radius: 2px;
+        padding: 7px;
+        margin: 0 10px;
+        background-color: white;
+        color: navy;
+      }
+      .li2 {
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        padding: 0 12px;
+      }
+      .full {
+        display: flex;
+        justify-content: space-between;
+      }
+      #home {
+        padding: 2px 12px;
+        border-top: 2px solid red;
+        border-bottom: 2px solid skyblue;
+      }
+
+      .non-stop {
+        align-items: center;
+        display: flex;
+        /* margin: 0 200px; */
+        padding: 0 20px;
+        height: 90px;
+        justify-content: space-evenly;
+      }
+      .non-stop .letter {
+        display: flex;
+        color: NAVY;
+        font-size: 16px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        /* font-weight: 115px; */
+      }
+      .non-stop .first {
+        color: #00aeef;
+        padding: 0 5px;
+      }
+      .wrap .num {
+        font-size: 30px;
+        color: rgb(243, 43, 8);
+        margin-left: 35px;
+        margin-bottom: 2px;
+      }
+      .wrap i {
+        margin-bottom: 2px;
+        padding-left: 5px;
+        margin-left: 3px;
+      }
+      .wrap .num.icon {
+        margin-left: 2px;
+        color: white;
+      }
+      .letter.visit {
+        margin-left: 19px;
+      }
+
+      .title {
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #fff;
+        margin-left: 20px;
+      }
+      .ncc-bg .ncc {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+      }
+      .ncc-bg .ncc .red {
+        background-color: red;
+        height: 40px;
+        width: 13px;
+      }
+      .ncc-bg .ncc .navy {
+        background-color: #2e3092;
+        height: 40px;
+        width: 13px;
+      }
+      .ncc-bg .ncc .sky {
+        background-color: #00aeef;
+        height: 40px;
+        width: 13px;
+      }
+      .ncc-contain {
+        background-color: #2e3092;
+      }
+      .ncc-bg {
+        padding-top: 90px;
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .ncc-bg .paragraph {
+        display: flex;
+        margin: 0 20px;
+        padding: 10px 15px 60px 0;
+        justify-content: space-between;
+      }
+      .ncc-bg span {
+        max-width: 50%;
+        color: #fff;
+        padding: 0 20px;
+        word-spacing: 4px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+      }
+      .main-corner {
+        margin-top: 60px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        text-shadow: 2px 2px 2px red;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        color: red;
+      }
+      .main-corner .red {
+        background-color: red;
+        height: 35px;
+        width: 10px;
+      }
+      .main-corner .navy {
+        background-color: #2e3092;
+        height: 35px;
+        width: 10px;
+      }
+      .main-corner .sky {
+        background-color: #00aeef;
+        height: 35px;
+        width: 10px;
+        margin-right: 20px;
+      }
+      .corner .sub-title {
+        text-align: center;
+        margin-bottom: 60px;
+        color: #595959;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      .corner {
+        margin: 10px 10px 40px 10px;
+        padding: 10px 20px;
+        background-image: url(bw.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .corner .photoshoot {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .corner .photoshoot2 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .photoshoot .start h3 {
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      .photoshoot2 .end h3 {
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      .exxperience {
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .footer {
+        padding: 15px;
+        display: flex;
+        margin: 0 auto;
+        background-color: #010101;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer li {
+        padding: 0 20px;
+        height: 39px;
+        list-style: none;
+        border-right: 1px solid grey;
+      }
+      .rightbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 100px;
+        height: 145px;
+        top: 35%;
+        background-color: rgb(7, 7, 7);
+        right: -25px;
+        bottom: 20%;
+      }
+      .sidebar img {
+        border: 1px solid transparent;
+        border-radius: 60%;
+        padding: 5px;
+        width: 60px;
+        height: 60px;
+        right: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="background-color: #ccc">
+      <div class="body">
+        <ul class="ul1">
+          <li class="li1">
+            <a style="text-decoration: none" href="https://indiancc.mygov.in/">
+              Skip to Main Content</a
+            >
+          </li>
+          <li class="li1">
+            <i class="fa-solid fa-wheelchair-move"></i>
+          </li>
+          <li class="li1">Log in</li>
+          <li class="li1">About Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- LOGO IMAGE ON TOP -->
+
+    <div class="navy-border">
+      <div class="navy">
+        <div class="full">
+          <div class="logo">
+            <img
+              class="mygov"
+              src="https://indiancc.mygov.in/wp-content/themes/ncc/assets/images/mygov-logo.png"
+              alt=""
+            />
+            <img
+              class="ncc-logo"
+              src="https://indiancc.mygov.in/wp-content/themes/ncc/assets/images/ncc-logo.png"
+              alt=""
+            />
+          </div>
+
+          <!-- MENU OF PAGE OR NAVBAR -->
+          <div class="head">
+            <ul class="ul2">
+              <li id="home" class="li2">HOME</li>
+              <li class="li2">CADET'S CORNER</li>
+              <li class="li">ADD ACTIVITY</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade carousel-dark"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="pride3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item active">
+          <img src="pride.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="pride2.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- side bar -->
+
+    <div class="sidebar">
+      <div class="rightbar">
+        <img src="msg.png" alt="" />
+        <img src="phone.png" alt="" />
+      </div>
+    </div>
+
+    <!-- CONTRIBUTION CORNER -->
+
+    <div class="non-stop">
+      <div class="wrap">
+        <span class="num">223627</span>
+
+        <div class="letter">
+          CADET'S
+          <span class="first"> REGISTERED </span>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <span class="num">223627</span>
+        <div class="letter">
+          ACTIVITIES
+          <span class="first">PUBLISHED</span>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <span class="num">223627</span>
+        <div class="letter">
+          CADET'S
+          <span class="first"> CONTRIBUTION </span>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <i class="fa-solid fa-signal"></i>
+        <span class="num icon" style="background-color: #00aeef"
+          >32,36,271</span
+        >
+        <div class="letter visit" style="color: black">
+          VISITOR
+          <span class="first" style="color: black">NUMBER</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT AIM OF NCC -->
+
+    <div class="ncc-contain">
+      <div class="ncc-bg">
+        <div class="ncc">
+          <div style="display: flex">
+            <div class="red"></div>
+            <div class="navy"></div>
+            <div class="sky"></div>
+          </div>
+          <h1 class="title">Aim Of NCC Digital Forum</h1>
+        </div>
+        <div class="paragraph">
+          <span>
+            NCC Digital Forum is a platform for Cadets to share their
+            experiences and values imbibed while undergoing NCC Training. The
+            ‘Cadet’s Corner’ would enrich the viewers with systematically
+            archived experiences of NCC cadets in text, audio and video formats.
+          </span>
+          <span>
+            The forum provides for an unprecedented exchange of experiences
+            amongst 15 Lac NCC Cadets across the country thereby contributing
+            towards National Integration and Nation Building.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!--  CADET'S CORNER-->
+
+    <div class="corner">
+      <div class="main-corner">
+        <div style="display: flex">
+          <div class="red"></div>
+          <div class="navy"></div>
+          <div class="sky"></div>
+        </div>
+        CADET'S CORNER
+      </div>
+      <div class="sub-title">
+        Activities performed by the NCC cadets across the country
+      </div>
+
+      <!-- images of activities -->
+      <div class="exxperience">
+        <div class="photoshoot">
+          <div class="start">
+            <div class="img">
+              <img src="magazine.jpg" alt="" />
+            </div>
+            <h3>E-Magazine</h3>
+          </div>
+
+          <div class="start">
+            <div class="img">
+              <img src="misc.jpg" alt="" />
+            </div>
+            <h3>Misc</h3>
+          </div>
+
+          <div class="start">
+            <div class="img">
+              <img src="sports.jpg" alt="" />
+            </div>
+            <h3>Sports & Adventure</h3>
+          </div>
+        </div>
+
+        <div class="photoshoot2">
+          <div class="end">
+            <div class="img2">
+              <img src="training.jpg" alt="" />
+            </div>
+            <h3>Training</h3>
+          </div>
+
+          <div class="end">
+            <div class="img2">
+              <img src="yep.jpg" alt="" />
+            </div>
+            <h3>YEP</h3>
+          </div>
+
+          <div class="end">
+            <div class="img2">
+              <img src="sscd.jpg" alt="" />
+            </div>
+            <h3>SSCD</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="ncc-footer">
+        <li><img src="ncc-footer-1.png" alt="" /></li>
+      </div>
+      <div class="ncc-footer">
+        <li><img src="ncc-footer-2.png" alt="" /></li>
+      </div>
+      <div class="ncc-footer">
+        <li><img src="ncc-footer-3.png" alt="" /></li>
+      </div>
+      <div class="ncc-footer">
+        <li style="border: none"><img src="ncc-footer-4.png" alt="" /></li>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+  </body>
+</html>
