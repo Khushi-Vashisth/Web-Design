@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details form</title>
+    <style>
+        body{
+            border:2px solid black;
+            background-color: rgb(107, 223, 223);
+        }
+        #cyan:hover{
+            
+            background-image: none;
+            background-color: lightpink;
+        }
+     #cyan{
+        box-shadow: 7px 7px 14px rgb(235, 136, 153);
+        background-image: url(kiki.jpg);
+        background-size:cover;
+        margin: auto;
+        width:350px;
+        
+     }
+     form li,h1{
+        list-style-type: none;
+        padding-top: 5px;
+        padding-bottom: 15px;
+     }
+     form{
+        text-align:start;
+        margin: 25px 30px;
+        margin-bottom: 20px;
+
+     }
+     input{
+        border: none;
+        background-color:none;
+     }
+     input:hover{
+        background-color: lightcyan;
+        border:1px solid grey
+     }
+     input:focus{
+        outline: none;
+     }
+     select:focus{
+        outline:darkslategrey;
+     }
+     select{
+        padding: 6px 35px;
+        background-color: lightcyan;
+     }
+     option{
+        background-color:lightpink;
+
+     }
+     
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id="main">
+        <div id="cyan">
+        <form action="#">
+            <h1>Registration Form</h1>
+           <li>
+            <label for="name">First Name :
+                <input type="text" placeholder="Enter First name" size="25">
+            </label>
+           </li>
+           <li>
+            <label for="name">Last Name :
+                <input type="text" placeholder="Enter Last name" name="name" id="name" size="25">
+            </label>
+           </li>
+           <li>
+            <label for="date">Date of Birth : 
+                <input type="date" name="dateOfBirth" id="date">
+            </label>
+           </li>
+           <li>
+           <legend>Area of interest : </legend>
+           <label for=" option">
+            <input type="checkbox" name="computer" id="">
+            Computer
+           </label>
+           <label for=" option">
+            <input type="checkbox" name="Science" id="">
+            Science
+           </label>
+           <label for=" option">
+            <input type="checkbox" name="Labourer" id="">
+            Labourer
+           </label>
+           <br>
+           <label for=" option">
+            <input type="checkbox" name="Drawing" id="">
+            Drawing
+           </label>
+           <label for=" option">
+            <input type="checkbox" name="Civil Service" id="">
+            Civil Service
+           </label>
+           </li>
+           <li>
+            <fieldset style="text-align: center;">
+                <legend>
+                Select your Qualification :
+                </legend>
+                  <select name="qualification" id="options">
+                       <option value="10">10th</option>
+                       <option value="12">12th</option>
+                       <option value="degree">Graduate</option>
+                       <option value="otherDegree">post Graduate</option>
+                  </select>
+               </fieldset>
+           </li>
+          </form>
+     </div>
+    </div>
+    </center>
+  </body>
+</html>
