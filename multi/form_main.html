@@ -5,120 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details form</title>
     <style>
-        body{
-            border:2px solid black;
-            background-color: rgb(107, 223, 223);
-        }
-        #cyan:hover{
-            
-            background-image: none;
-            background-color: lightpink;
-        }
-     #cyan{
+      img:hover {
+        border-style: double;
+      }
+      img {
+        border: 4px solid rgb(95, 76, 95);
+        border-radius: 50%;
+      }
+      body {
+        border: 2px solid black;
+        background-color: rgb(182, 223, 223);
+      }
+      #cyan:hover {
+        background-image: none;
+        background-color: rgb(182, 211, 255);
+        border-style: double;
+      }
+      #cyan {
         box-shadow: 7px 7px 14px rgb(235, 136, 153);
         background-image: url(kiki.jpg);
-        background-size:cover;
+        background-size: cover;
         margin: auto;
-        width:350px;
-        
-     }
-     form li,h1{
+        width: 350px;
+      }
+      form li,
+      h1 {
         list-style-type: none;
         padding-top: 5px;
         padding-bottom: 15px;
-     }
-     form{
-        text-align:start;
+      }
+      form {
+        text-align: start;
         margin: 25px 30px;
         margin-bottom: 20px;
-
-     }
-     input{
+      }
+      input {
         border: none;
-        background-color:none;
-     }
-     input:hover{
+        background-color: none;
+      }
+      input:hover {
         background-color: lightcyan;
-        border:1px solid grey
-     }
-     input:focus{
+        border: 1px solid grey;
+      }
+      input:focus {
         outline: none;
-     }
-     select:focus{
-        outline:darkslategrey;
-     }
-     select{
+      }
+      select:focus {
+        outline: darkslategrey;
+      }
+      select {
         padding: 6px 35px;
         background-color: lightcyan;
-     }
-     option{
-        background-color:lightpink;
-
-     }
-     
+      }
+      option {
+        background-color: lightpink;
+      }
+      a:hover{
+         color:brown;
+      }
+      
     </style>
   </head>
   <body>
     <center>
-    <div id="main">
+      <div id="main" style="padding: 50px 0">
+        <img
+          src="kiki.jpg"
+          alt="kiki"
+          height="150px"
+          width="150"
+          title="I'm Khushi Dhiman <3 & this page is my creation"
+        />
+        <article style="color: palevioletred">
+          Hello to everyone
+          <br />
+          This web page is developed by me.
+          <br />
+        </article>
+
         <div id="cyan">
-        <form action="#">
+          <form action="#">
             <h1>Registration Form</h1>
-           <li>
-            <label for="name">First Name :
-                <input type="text" placeholder="Enter First name" size="25">
-            </label>
-           </li>
-           <li>
-            <label for="name">Last Name :
-                <input type="text" placeholder="Enter Last name" name="name" id="name" size="25">
-            </label>
-           </li>
-           <li>
-            <label for="date">Date of Birth : 
-                <input type="date" name="dateOfBirth" id="date">
-            </label>
-           </li>
-           <li>
-           <legend>Area of interest : </legend>
-           <label for=" option">
-            <input type="checkbox" name="computer" id="">
-            Computer
-           </label>
-           <label for=" option">
-            <input type="checkbox" name="Science" id="">
-            Science
-           </label>
-           <label for=" option">
-            <input type="checkbox" name="Labourer" id="">
-            Labourer
-           </label>
-           <br>
-           <label for=" option">
-            <input type="checkbox" name="Drawing" id="">
-            Drawing
-           </label>
-           <label for=" option">
-            <input type="checkbox" name="Civil Service" id="">
-            Civil Service
-           </label>
-           </li>
-           <li>
-            <fieldset style="text-align: center;">
-                <legend>
-                Select your Qualification :
-                </legend>
-                  <select name="qualification" id="options">
-                       <option value="10">10th</option>
-                       <option value="12">12th</option>
-                       <option value="degree">Graduate</option>
-                       <option value="otherDegree">post Graduate</option>
-                  </select>
-               </fieldset>
-           </li>
+            <li>
+              <label for="name"
+                >First Name :
+                <input type="text" placeholder="Enter First name" size="25" />
+              </label>
+            </li>
+            <li>
+              <label for="name"
+                >Last Name :
+                <input
+                  type="text"
+                  placeholder="Enter Last name"
+                  name="name"
+                  id="name"
+                  size="25"
+                />
+              </label>
+            </li>
+            <li>
+              <label for="date"
+                >Date of Birth :
+                <input type="date" name="dateOfBirth" id="date" />
+              </label>
+            </li>
+            <li>
+              <legend>Area of interest :</legend>
+              <label for=" option">
+                <input type="checkbox" name="computer" id="" />
+                Computer
+              </label>
+              <label for=" option">
+                <input type="checkbox" name="Science" id="" />
+                Science
+              </label>
+              <label for=" option">
+                <input type="checkbox" name="Labourer" id="" />
+                Labourer
+              </label>
+              <br />
+              <label for=" option">
+                <input type="checkbox" name="Drawing" id="" />
+                Drawing
+              </label>
+              <label for=" option">
+                <input type="checkbox" name="Civil Service" id="" />
+                Civil Service
+              </label>
+            </li>
+            <li>
+              <fieldset style="text-align: center">
+                <legend>Select your Qualification :</legend>
+                <select name="qualification" id="options">
+                  <option value="10">10th</option>
+                  <option value="12">12th</option>
+                  <option value="degree">Graduate</option>
+                  <option value="otherDegree">post Graduate</option>
+                </select>
+              </fieldset>
+            </li>
+            <li>
+              <legend>select any one :</legend>
+              <label for="radio">HBSE</label>
+              <input type="radio" />
+              <label for="radio">CBSE</label>
+              <input type="radio" />
+            </li>
+            <button style="margin-bottom: 10px;" type="submit">submit</button>
           </form>
-     </div>
-    </div>
+        </div>
+        <div>
+          <section>
+            <legend>contact me :</legend>
+            <li style="list-style-type: none">
+              Email :
+              <a
+                style="text-decoration: none"
+                href="mailto:khushidhiman951@gmail.com"
+                >khushidhiman951@gmail.com</a
+              >
+            </li>
+            <li style="list-style-type: none">
+              Telephone :
+              <a style="text-decoration: none" href="tel:+919050080006"
+                >905008***6</a
+              >
+            </li>
+          </section>
+        </div>
+      </div>
     </center>
   </body>
 </html>
