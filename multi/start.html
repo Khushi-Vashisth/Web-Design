@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practices</title>
+    <style>
+      form ul li {
+        margin-top: 10px;
+      }
+      div {
+        /* background-image: url("sona.jpg"); */
+        background-color: cadetblue;
+      }
+      .img-kiki {
+        border: 3px solid rgb(214, 16, 214);
+        border-radius: 50%;
+      }
+      #tulip {
+        border: 5px solid rgb(243, 74, 102);
+      }
+      table {
+        border-collapse: collapse;
+        border: 5px solid rgb(34, 32, 32);
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 10px 20px;
+      }
+      th {
+        background-color: yellowgreen;
+      }
+      td {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+    <h1>Various elements in HTML</h1>
+    <hr />
+    <div>
+      <title>Forgot Everything i learned</title>
+      <header>Started a new journey</header>
+      <article>
+        Don't know how long this journey will Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Recusandae officia quod soluta expedita
+        tempora, deleniti accusamus rerum atque magni maxime tempore doloribus
+        adipisci aliquid sint veniam. Nihil laudantium tenetur reiciendis? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Ratione earum maiores
+        iure obcaecati rem tempora molestias neque at doloribus quasi soluta ex
+        veritatis, distinctio blanditiis nemo? Culpa ex consectetur incidunt?
+      </article>
+      <section>another section for my enjoyment</section>
+      <footer>this is the ending of journey</footer>
+      <aside>what's this</aside>
+    </div>
+    <hr />
+    <h1>Embedded Images in HTML</h1>
+    <hr />
+    <img
+      class="img-kiki"
+      src="kiki.jpg"
+      alt="kiki"
+      width="25%"
+      height="10%"
+      title="I'm Khushi Dhiman <3"
+    />
+    <img
+      id="tulip"
+      src="https://m.media-amazon.com/images/I/71sQOlkixLL._SL1500_.jpg"
+      alt="My love : <3 TULIP"
+      width="250"
+      height="250"
+    />
+    <!-- <img src="sona3.jpg" alt="sona" sizes="(max-width:600px) 470px, 800px" /> -->
+    <hr />
+    <h1>How to create table</h1>
+    <hr />
+    <table>
+      <colgroup>
+        <col style="background-color: yellowgreen" />
+        <col />
+        <col />
+      </colgroup>
+      <tr>
+        <th>Name</th>
+        <th>Father's Name</th>
+        <th>Mother's Name</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>Vines</td>
+        <td>Mr. Rakesh Dhiman</td>
+        <td>Mrs. Seema Rani</td>
+        <td>Average</td>
+      </tr>
+      <tr>
+        <td>Shubham</td>
+        <td>Mr. Rakesh Dhiman</td>
+        <td>Mrs. Seema Rani</td>
+        <td>More Than Average</td>
+      </tr>
+      <tr>
+        <td>Aayush</td>
+        <td>Mr. Rakesh Dhiman</td>
+        <td>Mrs. Seema Rani</td>
+        <td>Average</td>
+      </tr>
+      <tr>
+        <td>Khushi</td>
+        <td>Mr. Rajbeer Dhiman</td>
+        <td>Mrs. Meena Rani</td>
+        <td>Good</td>
+      </tr>
+      <tr>
+        <td>Aayan</td>
+        <td>Mr. rajbeer Dhiman</td>
+        <td>Mrs. Meena Rani</td>
+        <td>Poor</td>
+      </tr>
+      <tr>
+        <td>Anshuman</td>
+        <td>Mr. Rajbeer Dhiman</td>
+        <td>Mrs. Meena Rani</td>
+        <td>More than Average</td>
+      </tr>
+      <tr>
+        <td>Mayank</td>
+        <td>Mr. Vinod Dhiman</td>
+        <td>&nbsp;</td>
+        <td>very Poor</td>
+      </tr>
+      <tr>
+        <td>kartik</td>
+        <td>Mr. Vinod Dhiman</td>
+        <td>Mrs. Dimpy Rani</td>
+        <td>Good</td>
+      </tr>
+    </table>
+
+    <ul
+      style="
+        border: 2px solid black;
+        background-image: url(sona.jpg);
+        background-size: 100px 200px;
+        background-repeat: repeat;
+      "
+    >
+      <li>Khushi</li>
+      <li>Dhiman</li>
+      <li>Mistii</li>
+      <li>parii</li>
+      <li>Manya</li>
+      <li>Sona</li>
+    </ul>
+
+    <ol style="border: 2px solid black; padding: 10px 20px; text-align: center">
+      <li>Khushi</li>
+      <li>Sona</li>
+      <li>Mistii</li>
+      <li>parii</li>
+      <li>Manya</li>
+    </ol>
+    <hr />
+    <h1>Create Form</h1>
+    <hr />
+    <form
+      action="#"
+      style="background-color: cadetblue; color: darkblue; padding: 20px 20px"
+    >
+      <ul>
+        <li>
+          <label for="Name"
+            >Name :
+            <input type="text" id="Name " name="name" />
+          </label>
+        </li>
+        <li>
+          <label for="mail"
+            >E-mail :
+            <input type="email" id="email" />
+          </label>
+        </li>
+        <li>
+          <label for="msg"
+            >Message :
+            <textarea name="msg" id="msg"></textarea>
+          </label>
+        </li>
+      </ul>
+      <input type="radio" name="radio" id="options" />
+    </form>
+  </body>
+</html>
