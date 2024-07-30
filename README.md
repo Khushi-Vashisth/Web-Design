@@ -1,2 +1,2 @@
-<h2>----   Some web pages    ----</h2>
+<h2>----   Ncc web     ----</h2>
 <h3>using HTML & CSS</h3>
